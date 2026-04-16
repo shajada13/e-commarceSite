@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopBD — E-Commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="header-root"></div>
+    <div id="toast-root"></div>
+    <main id="page-root"></main>
+    <footer id="footer-root">
+      <p>🛍 ShopBD — Full-Stack E-Commerce Demo</p>
+      <p>Vanilla JS · Auth Simulation · Relational Data (Products, Customers, Orders, Payments) · Transaction Rollback</p>
+    </footer>
+  </div>
+
+  <!-- Load order matters: data → utils → state → pages → app -->
+  <script src="js/data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/pages/header.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/product.js"></script>
+  <script src="js/pages/cart.js"></script>
+  <script src="js/pages/checkout.js"></script>
+  <script src="js/pages/auth.js"></script>
+  <script src="js/pages/profile.js"></script>
+  <script src="js/pages/admin.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
